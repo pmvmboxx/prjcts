@@ -1,4 +1,4 @@
-# 🎬🍿Why So Series Bot
+# 🎬Why So Series Bot
 
 A Telegram bot built with Python.
 
