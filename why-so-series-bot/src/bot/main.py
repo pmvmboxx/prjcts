@@ -1,10 +1,10 @@
 import telebot
+from config import BOT_TOKEN 
+from handlers import register_handlers 
 
-bot = telebot.TeleBot('8259666751:AAGEpx4tGxAZ4OzkWM7vUKmy7FXHGLMepEU')
+bot = telebot.TeleBot(BOT_TOKEN)
 
-#decorator message_handler
-@bot.message_handler(commands=['start'])
-def main(message):
-    bot.send_message(message.chat.id, "Привіт!")
+register_handlers(bot)
 
-#bot.polling(non_stop=False)
+#bot.infinity_polling()
+bot.polling(non_stop=True)
