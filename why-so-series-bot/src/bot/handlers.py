@@ -54,16 +54,16 @@ def register_handlers(bot):
     # ──────────────────────────────────────────
     # /genres
     # ──────────────────────────────────────────
-    @bot.message_handler(commands=['genres'])
-    def genres(message):
-        genre_list = get_all_genres()
-        genres_text = "\n".join(f"• {g.capitalize()}" for g in genre_list)
-        bot.send_message(
-            message.chat.id,
-            f"🎭 *Available genres:*\n\n{genres_text}\n\n"
-            f"_Genre filtering with buttons coming in the next update!_",
-            parse_mode='Markdown'
-        )
+    #@bot.message_handler(commands=['genres'])
+    #def genres(message):
+    #    genre_list = get_all_genres()
+    #    genres_text = "\n".join(f"• {g.capitalize()}" for g in genre_list)
+    #    bot.send_message(
+    #        message.chat.id,
+    #        f"🎭 *Available genres:*\n\n{genres_text}\n\n"
+    #        f"_Genre filtering with buttons coming in the next update!_",
+    #        parse_mode='Markdown'
+    #    )
 
     # ──────────────────────────────────────────
     # /learn — prompt user to upload .srt

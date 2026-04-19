@@ -246,3 +246,6 @@ __pycache__/
 
 # Logs
 *.log
+
+# database
+database.db
